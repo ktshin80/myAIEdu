@@ -1,0 +1,24 @@
+/* 4050 대상: 18px 이상 본문, 높은 대비. 인쇄해서 나눠 줄 수 있도록 카드 폭을 A4 안쪽으로 둔다 */
+:root { --ink: #1f2933; --accent: #1d5fd0; --bg: #f6f8fb; --card: #fff; --line: #d5dce6; --muted: #52606d; }
+* { box-sizing: border-box; }
+body { margin: 0; padding: 32px 16px; font: 18px/1.7 "Malgun Gothic", "Apple SD Gothic Neo", sans-serif; color: var(--ink); background: var(--bg); }
+.card { max-width: 680px; margin: 0 auto; background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 32px; }
+.card header { border-bottom: 3px solid var(--accent); padding-bottom: 16px; margin-bottom: 8px; }
+.label { margin: 0; color: var(--accent); font-weight: 700; font-size: .95rem; }
+h1 { margin: 4px 0; font-size: 2rem; }
+.headline { margin: 0; font-size: 1.25rem; font-weight: 700; }
+h2 { font-size: 1.2rem; margin: 24px 0 8px; color: var(--accent); }
+.strengths { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0; margin: 0; }
+.strengths li { background: #e8f0fd; border-radius: 99px; padding: 6px 16px; font-weight: 700; }
+.story { display: grid; grid-template-columns: max-content 1fr; gap: 6px 16px; margin: 0; }
+.story dt { font-weight: 700; color: var(--muted); }
+.story dd { margin: 0; }
+@media (max-width: 480px) {
+  .card { padding: 20px; }
+  .story { grid-template-columns: 1fr; }
+  .story dd { margin-bottom: 8px; }
+}
+@media print {
+  body { background: #fff; padding: 0; }
+  .card { border: 0; }
+}

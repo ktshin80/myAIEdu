@@ -21,6 +21,7 @@
   - `db/`: `database.py`(연결, 트랜잭션, init), `schema.py`, `seed.py`. 커리큘럼 내용은 `seed.py`의 `CURRICULUM`을 고치고 `data/academy.db`를 지운다.
 - `src/front/`: `index.html`, `css/style.css`, `js/app.js`. 사용자 입력은 `textContent`로만 화면에 넣는다.
 - `data/`: SQLite 파일(`academy.db`).
+- `courseware/`: 서버와 무관한 강의 자료. 주차별 `lecture.md`(강사용), `lab-guide.md`(수강생용), `examples/`(표준 라이브러리 실습 코드와 예시 HTML). 현재 7·8주차가 있다. `architecture.md` 8장의 승인된 예외다.
 
 ## 알아둘 점
 

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>작은 공장 품질 주치의 (서비스 소개 예시)</title>
+  <!-- 서버 없이 더블클릭으로 여는 파일이라 상대 경로로 연결한다 -->
+  <link rel="stylesheet" href="landing_page.css">
+</head>
+<body>
+  <!-- 8주차 완성 예시. 서비스, 인물, 가격은 모두 가상이며 가격은 가정값이다 -->
+  <header class="hero">
+    <p class="eyebrow">직원 30명 이하 제조사를 위한 품질 자문</p>
+    <h1>작은 공장 품질 주치의</h1>
+    <p>25년 품질 현장 경험으로, 거래처가 믿는 품질 기록을 함께 만듭니다.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>이런 고민 있으신가요?</h2>
+      <ul class="pains">
+        <li>거래처가 품질 기록을 달라는데 무엇을 남겨야 할지 모르겠다.</li>
+        <li>같은 불량이 반복되는데 원인을 찾을 사람이 없다.</li>
+        <li>품질 담당자를 따로 뽑기엔 아직 회사가 작다.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>이렇게 도와드립니다</h2>
+      <ol class="steps">
+        <li><strong>현장 진단 (1회)</strong>: 하루 동안 공정과 기존 기록을 살펴보고 개선점 보고서를 드립니다.</li>
+        <li><strong>기록 양식 만들기</strong>: 우리 공장에 맞는 불량 기록 엑셀 양식 3종을 만들어 드립니다.</li>
+        <li><strong>월 2회 함께 분석</strong>: 쌓인 기록을 같이 보며 반복 불량의 원인을 찾습니다.</li>
+      </ol>
+      <p class="note">1회 진단 30만 원, 월 자문 60만 원 (예시 가격)</p>
+    </section>
+
+    <section>
+      <h2>자주 묻는 질문</h2>
+      <dl class="faq">
+        <dt>평일에도 방문하나요?</dt>
+        <dd>현재는 토요일 방문을 기본으로 합니다. 평일은 상담 후 정합니다.</dd>
+        <dt>컴퓨터를 잘 몰라도 되나요?</dt>
+        <dd>네. 양식은 엑셀 한 장으로 만들고, 쓰는 법을 직원분께 직접 알려 드립니다.</dd>
+        <dt>한 번만 받아도 되나요?</dt>
+        <dd>네. 현장 진단만 받으셔도 보고서는 그대로 드립니다.</dd>
+      </dl>
+    </section>
+
+    <section>
+      <h2>상담 신청</h2>
+      <!-- 예시 페이지라 실제로 전송하지 않는다. 입력 확인과 안내 문구 표시만 보여 준다 -->
+      <form id="inquiry" novalidate>
+        <label>회사 이름 <input name="company" required autocomplete="organization"></label>
+        <label>연락받을 전화번호 <input name="phone" type="tel" required autocomplete="tel" placeholder="010-0000-0000"></label>
+        <label>요즘 가장 큰 품질 고민 <textarea name="concern" rows="3"></textarea></label>
+        <button class="btn" type="submit">상담 신청하기</button>
+        <p id="msg" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="landing_page.js"></script>
+</body>
+</html>

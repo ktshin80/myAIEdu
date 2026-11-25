@@ -9,3 +9,6 @@ data/*.db-journal
 
 # 브라우저 점검 도구가 만드는 임시 파일
 .playwright-mcp/
+
+# 강의 실습 예시 코드가 만드는 결과 파일 (수강생 입력이 들어갈 수 있다)
+courseware/**/output/

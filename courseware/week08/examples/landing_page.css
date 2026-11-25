@@ -1,0 +1,31 @@
+/* 4050 대상: 18px 이상 본문, 높은 대비, 넉넉한 터치 영역. business_canvas.py 결과 HTML도 이 파일을 함께 쓴다 */
+:root { --ink: #1f2933; --accent: #1d5fd0; --bg: #f6f8fb; --card: #fff; --line: #d5dce6; --muted: #52606d; }
+* { box-sizing: border-box; }
+body { margin: 0; font: 18px/1.7 "Malgun Gothic", "Apple SD Gothic Neo", sans-serif; color: var(--ink); background: var(--bg); }
+.hero { background: var(--accent); color: #fff; text-align: center; padding: 48px 20px; }
+.hero h1 { margin: 0 0 8px; font-size: 2rem; }
+.hero p { margin: 0; }
+.eyebrow { font-weight: 700; opacity: .9; }
+main { max-width: 860px; margin: 0 auto; padding: 24px 16px 48px; }
+h2 { font-size: 1.5rem; margin: 32px 0 12px; }
+.pains { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); list-style: none; padding: 0; margin: 0; }
+.pains li, .cell { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 16px; }
+.steps { padding-left: 1.4em; }
+.steps li { margin-bottom: 8px; }
+.faq dt { font-weight: 700; margin-top: 12px; }
+.faq dd { margin: 4px 0 0; color: var(--muted); }
+.canvas { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+.cell h3 { margin: 0 0 6px; font-size: 1.05rem; color: var(--accent); }
+.cell p { margin: 0; }
+.numbers { border-collapse: collapse; width: 100%; max-width: 480px; background: var(--card); }
+.numbers th, .numbers td { border: 1px solid var(--line); padding: 10px 14px; text-align: left; }
+.numbers td { text-align: right; font-weight: 700; }
+.note { color: var(--muted); font-size: .95rem; }
+form { display: grid; gap: 14px; background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 20px; }
+label { display: grid; gap: 4px; font-weight: 700; }
+input, textarea { font: inherit; padding: 12px; border: 2px solid var(--line); border-radius: 8px; }
+.btn { border: 0; border-radius: 8px; background: var(--accent); color: #fff; font: inherit; font-weight: 700; padding: 14px 28px; cursor: pointer; }
+input:focus, textarea:focus, .btn:focus-visible { outline: 3px solid #f5a623; outline-offset: 2px; }
+#msg { margin: 0; font-weight: 700; }
+#msg.ok { color: #137333; }
+#msg.err { color: #c5221f; }
