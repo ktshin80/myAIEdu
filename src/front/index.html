@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>4050 AI 실습 교육</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="hero">
+    <h1>AI 몰라도 괜찮아요</h1>
+    <p>8주 뒤엔 내 보고서·메일·홍보 문구를 AI와 함께 직접 완성합니다.</p>
+    <a class="btn" href="#apply">수강 신청하기</a>
+  </header>
+
+  <main>
+    <section id="curriculum">
+      <h2>8주 커리큘럼</h2>
+      <div class="tabs" role="tablist">
+        <button class="tab active" data-track="">전체</button>
+        <button class="tab" data-track="worker">직장인</button>
+        <button class="tab" data-track="owner">자영업자</button>
+      </div>
+      <div id="weeks" class="weeks" aria-live="polite">불러오는 중...</div>
+    </section>
+
+    <section id="apply">
+      <h2>수강 신청</h2>
+      <form id="form" novalidate>
+        <label>이름 <input name="name" required autocomplete="name"></label>
+        <label>이메일 <input name="email" type="email" required autocomplete="email"></label>
+        <label>연락처 <input name="phone" type="tel" autocomplete="tel" placeholder="선택"></label>
+        <label>나는 <select name="persona">
+          <option value="">선택 안 함</option>
+          <option value="worker">직장인</option>
+          <option value="owner">자영업자</option>
+        </select></label>
+        <label>기수 <select name="cohort_id" required></select></label>
+        <button class="btn" type="submit">신청하기</button>
+        <p id="msg" role="status"></p>
+      </form>
+    </section>
+
+    <section id="api-docs">
+      <h2>API 문서와 실습</h2>
+      <p>이 서비스가 제공하는 API입니다. 항목을 눌러 펼치면 요청·응답·오류를 볼 수 있고, 조회 API는 직접 호출해 볼 수 있습니다.</p>
+      <div id="api-docs-list">불러오는 중...</div>
+      <h3>실행 및 테스트</h3>
+      <div id="api-tests"></div>
+    </section>
+  </main>
+
+  <footer>일정과 수강료는 확정되면 안내드립니다.</footer>
+  <script src="/js/app.js"></script>
+  <script src="/js/api-docs.js"></script>
+</body>
+</html>

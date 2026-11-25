@@ -1,0 +1,11 @@
+# 실행 중 생기는 파일
+__pycache__/
+*.pyc
+
+# 수강생 개인정보가 들어갈 수 있는 런타임 DB (git에 올리지 않는다)
+data/*.db
+data/*.db-journal
+/academy.db
+
+# 브라우저 점검 도구가 만드는 임시 파일
+.playwright-mcp/
